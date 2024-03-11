@@ -1,0 +1,21 @@
+
+.reveal section {
+    justify-content: center;
+    display: flex;
+    text-align: left;
+
+    // Big sections
+    header {
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        @extend .w-100;
+        z-index: 100;
+        h1 small {
+            line-height: 80%;
+            display: block;
+            opacity: 0.6;
+
+        }
+    }
+}

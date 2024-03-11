@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Diseño Web 3 - Miguel Vallvé Garibaldi</title>
+	<style>html {opacity: 0;transition: opacity 1s ease-in-out;}</style>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/miki.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<header id="mainHeader" >
+		<div class="hamburger hamburger-effect" data-ui="open">
+			<span></span>
+			<span></span>
+		  </div>
+	</header>
+	
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-slide="slide-1.1" data-auto-animate><h2><small>Introducción a</small>Diseño Web 3</h2></section>
+					<section data-slide="slide-1.2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-1.3" data-auto-animate>Loading...</section>
+					<section data-slide="slide-1.4" data-auto-animate>Loading...</section>
+				</section>
+				<section>
+					<section data-slide="slide-2.1" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.3" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.4" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.5" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.6" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.7" data-auto-animate>Loading...</section>
+					<section data-slide="slide-2.8" data-auto-animate>Loading...</section>
+				</section>
+				<section data-slide="slide-3.1" data-auto-animate>Loading...</section>
+				<section data-slide="slide-4.1" data-auto-animate>Loading...</section>
+				<section data-slide="slide-5.1" data-auto-animate>Loading...</section>
+				<section data-slide="slide-6.1" data-auto-animate>Loading...</section>
+			</div>
+		</div>
+	
+	<footer style="position: fixed; bottom: 10px; z-index: 100;"><a style="color: aliceblue; cursor: pointer;">git</a></footer>
+
+	<script src="dist/reveal.js"></script>
+	<script src="js/miki.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+
+		Reveal.on('highlight-red', () => {
+			console.log('✨');
+		});
+
+		document.querySelector('footer a').addEventListener('click', () => {
+			//Reveal.right();
+			Reveal.slide( 0, 0 );
+
+		})
+
+		
+
+	</script>
+	<script></script>
+</body>
+
+</html>

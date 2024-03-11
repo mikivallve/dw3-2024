@@ -1,0 +1,140 @@
+// utilities
+.multiply {
+    mix-blend-mode: multiply;
+    background-blend-mode: multiply;
+}
+
+.top-15 {
+    position: relative;
+    top: 15px;
+}
+.top-50 {
+    position: relative;
+    top: 50px;
+}
+
+.top--10 {
+    position: relative;
+    top: -10px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.zoom-05 {
+    transform: scale(0.5) translateX(-50%) translateY(-25%)
+}
+
+.bg-005 {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.op-05{ 
+    opacity: 0.5
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.flex-unset {
+    flex: unset !important;
+    ;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.column-2 {
+    display: grid !important;
+    grid-template-columns: 200px 1fr;
+}
+
+
+// Margins
+
+.m-auto {
+    margin: auto;
+    justify-content: center;
+}
+
+
+@mixin generate-helpers($prop, $direction, $number) {
+    $d: str-slice($direction, 1, 1);
+    $p: str-slice($prop, 1, 1);
+
+    @if($d !="" or $p !="") {
+
+        $class: ".#{$p}#{$d}-#{$number}";
+
+        @if($d =="") {
+            #{$class} {
+                #{$prop}: #{$number}rem;
+            }
+        }
+
+        @else if($p =="") {
+            #{$class} {
+                #{$direction}: #{$number}rem;
+
+                @if($d !="g") {
+                    position: relative;
+                }
+            }
+        }
+
+        @else {
+            #{$class} {
+                #{$prop}-#{$direction}: #{$number}rem;
+            }
+        }
+    }
+}
+
+$props: "margin", "gap", "padding";
+$directions: "", "top", "bottom", "left", "right";
+
+@for $i from 0 through 5 {
+    @include generate-helpers('', 'gap', $i); // g-3
+    @each $directions in $directions {
+        @include generate-helpers('', $directions, $i); // t-3
+
+        @each $props in $props {
+            @include generate-helpers($props, $directions, $i); // mt-3
+        }
+    }
+}
+
+// Text
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+// Estructurales
+.divt{
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}

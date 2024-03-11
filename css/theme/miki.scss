@@ -1,0 +1,55 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/roboto-slab/100.css);
+@import url(./fonts/roboto-slab/400.css);
+@import url(./fonts/roboto-slab/600.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #f2f2f2;
+
+$mainColor: #333;
+$headingColor: #333;
+
+$mainFontSize: 1.6rem;
+$mainFont: 'Roboto Slab', Courier, monospace;
+$headingFont: 'Roboto Slab', Courier, monospace;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba($linkColor, 0.75);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
+
+@import 'parcials/menu';
+@import 'parcials/general';
+@import 'parcials/layout';
+@import 'parcials/sections';
+@import 'parcials/particulars';
+@import 'parcials/utilities';
+@import 'parcials/icons';

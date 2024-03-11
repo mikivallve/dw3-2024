@@ -1,0 +1,29 @@
+.reveal section {
+
+    .cols {
+        display: flex;
+        flex: 1;
+    }
+
+    [class*="col-"] {
+        padding: 2rem;
+        background-color: $backgroundColor;
+        width: 100%;
+    }
+
+    .col-20 {
+        max-width: 20%;
+        flex-shrink: 0;
+    }
+
+    .col-40 {
+        max-width: 40%;
+        flex-shrink: 0;
+    }
+
+    .col-50{
+        max-width: 50%;
+        flex-shrink: 0;
+    }
+
+}

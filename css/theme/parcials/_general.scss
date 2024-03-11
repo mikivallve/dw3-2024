@@ -1,0 +1,35 @@
+.reveal {
+
+    ul,
+    ol {
+        list-style: none;
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    a {
+        color: inherit;
+        border-bottom: 1px solid #42affa;
+    }
+
+    [data-go-slide]:not(a) {
+        cursor: pointer;
+        transition: filter 0.5s;
+
+        &:hover {
+            filter: saturate(0);
+        }
+    }
+    
+    @for $i from 0 through 5 {
+        h#{$i} small {
+        vertical-align: baseline;
+        font-size: 0.5em;
+        margin-left: 0.5rem;
+    }
+}
+}

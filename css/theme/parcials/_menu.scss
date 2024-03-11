@@ -1,0 +1,90 @@
+
+header#mainHeader {
+    position: fixed;
+    left: 2rem;
+    z-index: 100;
+    display: none; /* TBD menu */
+
+    .hamburger {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        min-width: 20px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        margin: 20px auto;
+        // overflow: hidden;
+        cursor: pointer;
+        color: #4b1cfb;
+
+        &::before,
+        &::after,
+        span {
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 7px;
+            border-radius: 4px;
+            background-color: currentColor;
+            position: absolute;
+            transform: rotate(0deg);
+            transition: all 0.2s linear 0s;
+        }
+
+        span {
+            top: 40%;
+        }
+
+        &::after {
+            top: 80%;
+        }
+
+    }
+
+    .hamburger-effect {
+        color: #333;
+
+        &:before,
+        &:after {}
+
+        span {
+            width: 50%;
+            border-radius: 4px 0 0 4px;
+            left: 0;
+            right: auto;
+
+            &:nth-child(2) {
+                border-radius: 0 4px 4px 0;
+                left: auto;
+                right: 0;
+            }
+        }
+
+        &.active {
+            span {
+                opacity: 0;
+
+                &:nth-child(1) {
+                    left: -30px;
+                }
+
+                &:nth-child(2) {
+                    right: -30px;
+                }
+            }
+
+            &::after {
+                top: 18px;
+                transform: rotate(135deg);
+            }
+
+            &::before {
+                top: 18px;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}
