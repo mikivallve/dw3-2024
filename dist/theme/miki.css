@@ -439,9 +439,14 @@ header#mainHeader .hamburger-effect.active::before {
   padding: 0;
   margin-bottom: 0.5rem;
 }
-.reveal a {
+.reveal a:not(.imgLink) {
   color: inherit;
   border-bottom: 1px solid #42affa;
+}
+.reveal a.imgLink:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.5s;
 }
 .reveal [data-go-slide]:not(a) {
   cursor: pointer;
@@ -518,6 +523,7 @@ header#mainHeader .hamburger-effect.active::before {
   line-height: 80%;
   display: block;
   opacity: 0.6;
+  margin: 0;
 }
 
 .reveal section .logos-list {
@@ -543,6 +549,21 @@ header#mainHeader .hamburger-effect.active::before {
 }
 .reveal section .tema img {
   margin-left: auto;
+}
+.reveal section .sticker {
+  position: absolute;
+  width: 150px;
+  object-fit: contain;
+  top: 0;
+  right: 5rem;
+}
+.reveal section code {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .multiply {
@@ -581,6 +602,10 @@ header#mainHeader .hamburger-effect.active::before {
   opacity: 0.5;
 }
 
+.op-01 {
+  opacity: 0.1;
+}
+
 .h-100 {
   height: 100vh;
 }
@@ -589,16 +614,28 @@ header#mainHeader .hamburger-effect.active::before {
   width: 100vw;
 }
 
-.flex-unset {
-  flex: unset !important;
-}
-
 .pos-fixed {
   position: fixed;
 }
 
+.pos-relative {
+  position: relative;
+}
+
+.flex-unset {
+  flex: unset !important;
+}
+
 .d-flex {
   display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .text-center {
@@ -611,7 +648,7 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .m-auto {
-  margin: auto;
+  margin: auto !important;
   justify-content: center;
 }
 
@@ -637,15 +674,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-0 {
-  margin-top: 0rem;
+  margin-top: 0rem !important;
 }
 
 .gt-0 {
-  gap-top: 0rem;
+  gap-top: 0rem !important;
 }
 
 .pt-0 {
-  padding-top: 0rem;
+  padding-top: 0rem !important;
 }
 
 .b-0 {
@@ -654,15 +691,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-0 {
-  margin-bottom: 0rem;
+  margin-bottom: 0rem !important;
 }
 
 .gb-0 {
-  gap-bottom: 0rem;
+  gap-bottom: 0rem !important;
 }
 
 .pb-0 {
-  padding-bottom: 0rem;
+  padding-bottom: 0rem !important;
 }
 
 .l-0 {
@@ -671,15 +708,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-0 {
-  margin-left: 0rem;
+  margin-left: 0rem !important;
 }
 
 .gl-0 {
-  gap-left: 0rem;
+  gap-left: 0rem !important;
 }
 
 .pl-0 {
-  padding-left: 0rem;
+  padding-left: 0rem !important;
 }
 
 .r-0 {
@@ -688,15 +725,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-0 {
-  margin-right: 0rem;
+  margin-right: 0rem !important;
 }
 
 .gr-0 {
-  gap-right: 0rem;
+  gap-right: 0rem !important;
 }
 
 .pr-0 {
-  padding-right: 0rem;
+  padding-right: 0rem !important;
 }
 
 .g-1 {
@@ -721,15 +758,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-1 {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
 .gt-1 {
-  gap-top: 1rem;
+  gap-top: 1rem !important;
 }
 
 .pt-1 {
-  padding-top: 1rem;
+  padding-top: 1rem !important;
 }
 
 .b-1 {
@@ -738,15 +775,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .gb-1 {
-  gap-bottom: 1rem;
+  gap-bottom: 1rem !important;
 }
 
 .pb-1 {
-  padding-bottom: 1rem;
+  padding-bottom: 1rem !important;
 }
 
 .l-1 {
@@ -755,15 +792,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-1 {
-  margin-left: 1rem;
+  margin-left: 1rem !important;
 }
 
 .gl-1 {
-  gap-left: 1rem;
+  gap-left: 1rem !important;
 }
 
 .pl-1 {
-  padding-left: 1rem;
+  padding-left: 1rem !important;
 }
 
 .r-1 {
@@ -772,15 +809,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-1 {
-  margin-right: 1rem;
+  margin-right: 1rem !important;
 }
 
 .gr-1 {
-  gap-right: 1rem;
+  gap-right: 1rem !important;
 }
 
 .pr-1 {
-  padding-right: 1rem;
+  padding-right: 1rem !important;
 }
 
 .g-2 {
@@ -805,15 +842,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .gt-2 {
-  gap-top: 2rem;
+  gap-top: 2rem !important;
 }
 
 .pt-2 {
-  padding-top: 2rem;
+  padding-top: 2rem !important;
 }
 
 .b-2 {
@@ -822,15 +859,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .gb-2 {
-  gap-bottom: 2rem;
+  gap-bottom: 2rem !important;
 }
 
 .pb-2 {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem !important;
 }
 
 .l-2 {
@@ -839,15 +876,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-2 {
-  margin-left: 2rem;
+  margin-left: 2rem !important;
 }
 
 .gl-2 {
-  gap-left: 2rem;
+  gap-left: 2rem !important;
 }
 
 .pl-2 {
-  padding-left: 2rem;
+  padding-left: 2rem !important;
 }
 
 .r-2 {
@@ -856,15 +893,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-2 {
-  margin-right: 2rem;
+  margin-right: 2rem !important;
 }
 
 .gr-2 {
-  gap-right: 2rem;
+  gap-right: 2rem !important;
 }
 
 .pr-2 {
-  padding-right: 2rem;
+  padding-right: 2rem !important;
 }
 
 .g-3 {
@@ -889,15 +926,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-3 {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
 }
 
 .gt-3 {
-  gap-top: 3rem;
+  gap-top: 3rem !important;
 }
 
 .pt-3 {
-  padding-top: 3rem;
+  padding-top: 3rem !important;
 }
 
 .b-3 {
@@ -906,15 +943,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-3 {
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 .gb-3 {
-  gap-bottom: 3rem;
+  gap-bottom: 3rem !important;
 }
 
 .pb-3 {
-  padding-bottom: 3rem;
+  padding-bottom: 3rem !important;
 }
 
 .l-3 {
@@ -923,15 +960,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-3 {
-  margin-left: 3rem;
+  margin-left: 3rem !important;
 }
 
 .gl-3 {
-  gap-left: 3rem;
+  gap-left: 3rem !important;
 }
 
 .pl-3 {
-  padding-left: 3rem;
+  padding-left: 3rem !important;
 }
 
 .r-3 {
@@ -940,15 +977,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-3 {
-  margin-right: 3rem;
+  margin-right: 3rem !important;
 }
 
 .gr-3 {
-  gap-right: 3rem;
+  gap-right: 3rem !important;
 }
 
 .pr-3 {
-  padding-right: 3rem;
+  padding-right: 3rem !important;
 }
 
 .g-4 {
@@ -973,15 +1010,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-4 {
-  margin-top: 4rem;
+  margin-top: 4rem !important;
 }
 
 .gt-4 {
-  gap-top: 4rem;
+  gap-top: 4rem !important;
 }
 
 .pt-4 {
-  padding-top: 4rem;
+  padding-top: 4rem !important;
 }
 
 .b-4 {
@@ -990,15 +1027,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-4 {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .gb-4 {
-  gap-bottom: 4rem;
+  gap-bottom: 4rem !important;
 }
 
 .pb-4 {
-  padding-bottom: 4rem;
+  padding-bottom: 4rem !important;
 }
 
 .l-4 {
@@ -1007,15 +1044,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-4 {
-  margin-left: 4rem;
+  margin-left: 4rem !important;
 }
 
 .gl-4 {
-  gap-left: 4rem;
+  gap-left: 4rem !important;
 }
 
 .pl-4 {
-  padding-left: 4rem;
+  padding-left: 4rem !important;
 }
 
 .r-4 {
@@ -1024,15 +1061,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-4 {
-  margin-right: 4rem;
+  margin-right: 4rem !important;
 }
 
 .gr-4 {
-  gap-right: 4rem;
+  gap-right: 4rem !important;
 }
 
 .pr-4 {
-  padding-right: 4rem;
+  padding-right: 4rem !important;
 }
 
 .g-5 {
@@ -1057,15 +1094,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mt-5 {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
 }
 
 .gt-5 {
-  gap-top: 5rem;
+  gap-top: 5rem !important;
 }
 
 .pt-5 {
-  padding-top: 5rem;
+  padding-top: 5rem !important;
 }
 
 .b-5 {
@@ -1074,15 +1111,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mb-5 {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 .gb-5 {
-  gap-bottom: 5rem;
+  gap-bottom: 5rem !important;
 }
 
 .pb-5 {
-  padding-bottom: 5rem;
+  padding-bottom: 5rem !important;
 }
 
 .l-5 {
@@ -1091,15 +1128,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .ml-5 {
-  margin-left: 5rem;
+  margin-left: 5rem !important;
 }
 
 .gl-5 {
-  gap-left: 5rem;
+  gap-left: 5rem !important;
 }
 
 .pl-5 {
-  padding-left: 5rem;
+  padding-left: 5rem !important;
 }
 
 .r-5 {
@@ -1108,15 +1145,15 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .mr-5 {
-  margin-right: 5rem;
+  margin-right: 5rem !important;
 }
 
 .gr-5 {
-  gap-right: 5rem;
+  gap-right: 5rem !important;
 }
 
 .pr-5 {
-  padding-right: 5rem;
+  padding-right: 5rem !important;
 }
 
 .text-center {
@@ -1170,4 +1207,8 @@ header#mainHeader .hamburger-effect.active::before {
 }
 .reveal section .icon-link::before {
   background-image: url("../assets/icons/link.svg");
+}
+.reveal section .icon-uy::before {
+  background-image: url("../assets/icons/uy.svg");
+  background-size: 1.35rem 0.9rem;
 }

@@ -1,4 +1,3 @@
-
 .reveal section {
 
     // particulars
@@ -8,23 +7,45 @@
         justify-content: space-between;
     }
 
-    .tema{
-        ul{
+    .tema {
+        ul {
             list-style: disc;
             margin-left: 2rem;
-            li{
+
+            li {
                 padding: 0;
                 margin-bottom: 0.5rem;
             }
         }
+
         display: grid;
         grid-template-columns: 250px auto;
         margin-bottom: 2rem;
-        img{margin-left: auto;}
+
+        img {
+            margin-left: auto;
+        }
+
         align-items: center;
         gap: 2rem;
         font-size: 1.25rem;
     }
 
+    .sticker {
+        position: absolute;
+        width: 150px;
+        object-fit: contain;
+        top: 0;
+        right: 5rem;
+    }
+
+    code {
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+        display: block;
+        border-radius: 0.5rem;
+        font-size: 1.25rem;
+    }
 
 }

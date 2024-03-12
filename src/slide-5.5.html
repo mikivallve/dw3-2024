@@ -1,0 +1,69 @@
+<header class="bg-005 pos-fixed">
+    <h1 class="zoom-05"><small>Fromularios</small>Que Funcionen</h1>
+</header>
+<main class="h-100 align-center d-flex">
+    <div class="cols m-auto align-center flex-unset">
+        <div class="col-free">
+            <img src="/dist/assets/forms/html-form-elements.png" alt="Formularios">
+        </div>
+        <div class="col-free">
+            <ul>
+                <li><a href="https://zapier.com" target="_blank" rel="noreferrer">Zapier (integraciones entre plataformas)</a></li>
+                <li><a href="https://hubspot.com" target="_blank" rel="noreferrer">Hubspot (CRM)</a></li>
+                <li><a href="https://www.mailjet.com/" target="_blank" rel="noreferrer">Mailjet (Email Marketing)</a></li>
+                <li><a href="https://mailgun.com/" target="_blank" rel="noreferrer">Mailgun (Email Optimization/Delivery)</a></li>
+                <li><a href="https://sendgrid.com/" target="_blank" rel="noreferrer"></a>SendGrid (Email Optimization/Delivery) </li>
+                <li><a href="https://postmarkapp.com/" target="_blank" rel="noreferrer">Postmark (Emails Transacionales)</a></li>
+                <li><a href="https://mandrillapp.com/" target="_blank" rel="noreferrer">Mandrill (Emails Transacionales)</a></li>
+                <li><a href="https://mailersend.com/" target="_blank" rel="noreferrer">Mailsender</a></li>
+            </ul>
+            </ul>
+        </div>
+        <aside class="notes">
+            <div class="col-free">
+                <form action="https://formsubmit.co/miguel.vallve@gmail.com" method="POST" class="form">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Suscribete</button>
+                </form>
+            </div>
+            <div class="col-free">
+                <code>
+                https://api.mailersend.com/v1/email \
+                -H 'Content-Type: application/json' \
+                -H 'X-Requested-With: XMLHttpRequest' \
+                -H 'Authorization: Bearer mlsn.703b54c1f7735ec1d201f097d2246f7c995cbe30bd7b8781bdb8f12ff6af22b0' \
+                -d '{
+                    "from": {
+                        "email": "info@trial-yzkq340n5o3gd796.mlsender.net"
+                    },
+                    "to": [
+                    {
+                        "email": "miguel.vallve@gmail.com"
+                    }
+                    ],
+                    "subject": "Hello from MailerSend!",
+                    "text": "Greetings from the team, you got this message through MailerSend.",
+                    "html": "Greetings from the team, you got this message through MailerSend."
+                }
+            </code>
+            </div>
+            <div class="col-free">
+                <form id="emailForm">
+                    <label for="fromEmail">From Email:</label>
+                    <input type="email" id="fromEmail" name="fromEmail" required><br><br>
+
+                    <label for="toEmail">To Email:</label>
+                    <input type="email" id="toEmail" name="toEmail" required><br><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Send Email</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</main>

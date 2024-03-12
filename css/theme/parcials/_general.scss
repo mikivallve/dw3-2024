@@ -11,9 +11,14 @@
         }
     }
 
-    a {
+    a:not(.imgLink) {
         color: inherit;
         border-bottom: 1px solid #42affa;
+    }
+    a.imgLink:hover{
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.5s;
     }
 
     [data-go-slide]:not(a) {

@@ -26,6 +26,10 @@ slides.forEach((slide, index) => {
                 Reveal.slide(slideArguments[0], slideArguments[1]);
             }))
 
+            // Send Email  
+            if (document.getElementById('emailForm')) {
+                sendEmail()
+            }
 
         })
         .catch(error => console.error('Error loading HTML:', error));
@@ -47,3 +51,44 @@ elements.forEach(element => {
     });
 });
 
+
+// Form API
+function sendEmail() {
+
+
+    document.getElementById('emailForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const fromEmail = document.getElementById('fromEmail').value;
+        const toEmail = document.getElementById('toEmail').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        fetch("https://api.mailersend.com/v1/email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-Requested-With": "XMLHttpRequest",
+                "Authorization": "Bearer mlsn.703b54c1f7735ec1d201f097d2246f7c995cbe30bd7b8781bdb8f12ff6af22b0"
+            },
+            body: JSON.stringify({
+                from: { email: fromEmail },
+                to: [{ email: toEmail }],
+                subject: subject,
+                text: message,
+                html: message
+            })
+        })
+            .then(response => {
+                if (response.ok) {
+                    alert("Email sent successfully!");
+                } else {
+                    throw new Error('Failed to send email');
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert("An error occurred while sending the email.");
+            });
+    });
+}
