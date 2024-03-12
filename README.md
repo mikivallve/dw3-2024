@@ -19,7 +19,7 @@ Este repo es un form de  [revealjs.com](https://revealjs.com/) que es la gente a
  - Prueba de Nivel: El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
 
 
-## Clase 2 > Pendientes Web 1 & Web 2: Hostings & Dominios
+## [Clase 2 > Pendientes Web 1 & Web 2: Hostings & Dominios](https://dw3.netlify.app/#/1)
 - Cerrando Conceptos de Hosting & Dominios.
 - Subir la landing creada a ~~Hostinger~~ *InfinityFree*.
 - Básicos de Git.
@@ -41,7 +41,7 @@ Este repo es un form de  [revealjs.com](https://revealjs.com/) que es la gente a
  - Enviar link a repositorio y al nuevo sitio por **slack**.
 
 
-## Clase 3: Pendientes Web 1 & Web 2: Formularios
+## [Clase 3: Pendientes Web 1 & Web 2: Formularios](https://dw3.netlify.app/#/5)
 - [Recapitular](https://internetingishard.netlify.app/html-and-css/forms/)
 - Netlify Forms
 - APIs y Servicios
@@ -51,6 +51,11 @@ Este repo es un form de  [revealjs.com](https://revealjs.com/) que es la gente a
 - Crear una landing page con el [siguiente formulario](https://media.slid.es/uploads/429581/images/4313187/responsive-form-mockup-963e65.png) siguiendo las buenas prácticas del capitulo 13 de [Internet is Hard](https://internetingishard.netlify.app/html-and-css/forms/) 
 - Subir la landing a Netlify utilizando Github
 - Configurar Netlify para que detecte el formulario y se encargue de los envíos.
+
+## Clase4: Pendientes de Web 1 & Web 2: Responsive
+- Recapitular
+- Mobile First y Breakpointss
+- Flex vs Grid?
 
 ---
 
