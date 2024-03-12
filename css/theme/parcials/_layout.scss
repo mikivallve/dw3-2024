@@ -8,21 +8,28 @@
     [class*="col-"] {
         padding: 2rem;
         background-color: $backgroundColor;
-        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    [class*="col-"][class*="-top"]  {
+        justify-content: start;
+        display: flex;
     }
 
     .col-20 {
-        max-width: 20%;
         flex-shrink: 0;
+        width: 20%;
     }
 
     .col-40 {
-        max-width: 40%;
+        width: 40%;
         flex-shrink: 0;
     }
 
     .col-50{
-        max-width: 50%;
+        width: 50%;
         flex-shrink: 0;
     }
 

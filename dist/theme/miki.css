@@ -493,18 +493,24 @@ header#mainHeader .hamburger-effect.active::before {
 .reveal section [class*=col-] {
   padding: 2rem;
   background-color: #f2f2f2;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.reveal section [class*=col-][class*=-top] {
+  justify-content: start;
+  display: flex;
 }
 .reveal section .col-20 {
-  max-width: 20%;
   flex-shrink: 0;
+  width: 20%;
 }
 .reveal section .col-40 {
-  max-width: 40%;
+  width: 40%;
   flex-shrink: 0;
 }
 .reveal section .col-50 {
-  max-width: 50%;
+  width: 50%;
   flex-shrink: 0;
 }
 
@@ -565,6 +571,24 @@ header#mainHeader .hamburger-effect.active::before {
   border-radius: 0.5rem;
   font-size: 1.25rem;
 }
+.reveal section .clase {
+  position: fixed;
+  z-index: 100;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+.reveal section .clase span {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.reveal section .clase small {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
 
 .multiply {
   mix-blend-mode: multiply;
@@ -604,6 +628,10 @@ header#mainHeader .hamburger-effect.active::before {
 
 .op-01 {
   opacity: 0.1;
+}
+
+.op-00 {
+  opacity: 0;
 }
 
 .h-100 {

@@ -47,5 +47,20 @@
         border-radius: 0.5rem;
         font-size: 1.25rem;
     }
-
+    .clase{
+        position: fixed;
+        z-index: 100;
+        right: 1.25rem;
+        top: 1.25rem;
+        span{background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;}
+            small{
+                text-align: center;
+                display: block;
+                font-weight: bold;
+                font-size: 0.85rem;
+            }
+    }
 }
