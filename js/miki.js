@@ -92,3 +92,17 @@ function sendEmail() {
             });
     });
 }
+
+// Overview / Indice de la Presentación
+document.querySelector(".vision-global").addEventListener("click", (e) => {
+    Reveal.toggleOverview();
+})
+
+Reveal.on( 'overviewhidden', event => {
+    document.querySelector(".vision-global").parentNode.classList.remove("active");
+} );
+
+Reveal.on( 'overviewshown', event => {
+    console.log("overview shown");
+    document.querySelector(".vision-global").parentNode.classList.add("active");
+} );

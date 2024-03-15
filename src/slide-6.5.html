@@ -1,9 +1,11 @@
-<header class="bg-005 pos-fixed">
-    <h1 class="zoom-05"><small>Fromularios</small>Que Funcionen</h1>
+<header class="bg-005">
+    <div class="container">
+    <h1 class="section-title"><small>Fromularios</small>Que Funcionen</h1>
+    </div>
 </header>
-<main class="h-100 align-center d-flex">
-    <div class="cols m-auto align-center flex-unset">
-        <div class="col-free">
+<main class="section-main">
+	<div class="cols">
+		<div class="col-50">
             <img src="/dist/assets/forms/html-form-elements.png" alt="Formularios">
         </div>
         <div class="col-free">
@@ -20,13 +22,13 @@
             </ul>
         </div>
         <aside class="notes">
-            <div class="col-free">
+            <div class="col-20">
                 <form action="https://formsubmit.co/miguel.vallve@gmail.com" method="POST" class="form">
                     <input type="email" name="email" placeholder="Email" required>
                     <button type="submit">Suscribete</button>
                 </form>
             </div>
-            <div class="col-free">
+            <div class="col-20">
                 <code>
                 https://api.mailersend.com/v1/email \
                 -H 'Content-Type: application/json' \
@@ -47,7 +49,7 @@
                 }
             </code>
             </div>
-            <div class="col-free">
+            <div class="col-10">
                 <form id="emailForm">
                     <label for="fromEmail">From Email:</label>
                     <input type="email" id="fromEmail" name="fromEmail" required><br><br>

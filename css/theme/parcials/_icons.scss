@@ -3,9 +3,10 @@
 
     // icons
     [class*="icon-"] {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         position: relative;
         margin-left: 2rem;
+        white-space: nowrap;
 
         &::before {
             content: '';

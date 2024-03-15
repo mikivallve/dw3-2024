@@ -1,10 +1,36 @@
 .reveal section {
 
-    .cols {
+    [class*="cols"] {
         display: flex;
         flex: 1;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 1rem;
     }
 
+    // Define the mixin
+    @mixin generate-cols($total-cols) {
+        @for $i from 1 through $total-cols {
+            .cols-#{$i} [class*="col-"] {
+                width: calc(-4rem + 100% / #{$i});
+                overflow: hidden;
+            }
+            .col-#{$i}0 {
+                flex-shrink: 0;
+                width: calc( percentage(calc($i / 10)) - 1rem);
+            }
+        }
+    }
+    
+    // Use the mixin to generate classes for numbers 1 to 12
+    @include generate-cols(12);
+    
+    [class*="col-free"]{
+        width: unset;
+    }
+    
+    
     [class*="col-"] {
         padding: 2rem;
         background-color: $backgroundColor;
@@ -13,24 +39,21 @@
         flex-direction: column;
     }
 
-    [class*="col-"][class*="-top"]  {
+    [class*="col-"][class*="-top"] {
         justify-content: start;
         display: flex;
     }
 
-    .col-20 {
-        flex-shrink: 0;
-        width: 20%;
-    }
+    @media screen and (max-width: 600px) {
 
-    .col-40 {
-        width: 40%;
-        flex-shrink: 0;
-    }
+        .d-flex,
+        .cols {
+            flex-direction: column !important;
+        }
 
-    .col-50{
-        width: 50%;
-        flex-shrink: 0;
+        [class*="col-"] {
+            width: 100% !important;
+        }
     }
 
 }

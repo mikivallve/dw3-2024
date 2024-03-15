@@ -1,3 +1,22 @@
+.mini-menu{
+    @extend .pos-fixed;
+    @extend .p-1;
+    @extend .r-5;
+    @extend .t-2;
+    @extend .z-100;
+    @extend .d-flex;
+    @extend .g-1;
+    border: 2px solid transparent;
+    border-right-width: 0;
+    transition: all 0.5s ease;
+    &.active{
+        background-color: white;
+        right: 0;
+        padding: 2rem;
+        border-color: #333;
+        @extend .shadow-dark;
+    }
+}
 
 header#mainHeader {
     position: fixed;
