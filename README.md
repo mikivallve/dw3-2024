@@ -1,16 +1,13 @@
 # Diseño Web 3 - 2024
 
-Este repo es un form de [revealjs.com](https://revealjs.com/) que es la gente atrás de slides.com.
+Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente atrás de slides.com.
 
-## Clase 1 > Intro
+## [Clase 1 > Intro](https://dw3.netlify.app)
 
-### Intro a la materia
-
-### Roles Profesionales en el desarrollo Web/Apps
-
-### Planificación del Semestre
-
-### Expectativas
+- Intro a la materia
+- Roles Profesionales en el desarrollo Web/Apps
+- Planificación del Semestre
+- Expectativas
 
 ### Tarea
 
