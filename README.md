@@ -17,7 +17,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - ~~Crear una cuenta gratuita en Hostinger: https://www.hostinger.com/free-hosting~~.
 - Crear una cuenta gratuita en InfinityFree: https://infinityfree.com/.
 - Crear una cuenta gratuita en Netlify: https://www.netlify.com/pricing/.
-- Prueba de Nivel: El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
+- <span id="prueba-de-nivel">Prueba de Nivel:</spam> El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
 
 ## [Clase 2 > Pendientes Web 1 & Web 2: Hostings & Dominios](https://dw3.netlify.app/#/1)
 
@@ -29,8 +29,9 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 ### Tarea
 
 - Subir al servidor elegido un sitio web de su autoría que tenga al menos un formulario y que no sea el final de DW2.
-- Implementar el envio de correo utilizando PHPmailer. Pueden leer las primeras dos secciones de [este articulo](https://www.hostinger.es/tutoriales/enviar-emails-usando-php-mail#Usar_la_funcion_PHP_mail)
-- Duplicar el formulario e implementar el envío de formularios utilizando el servicio de [Formsubmit](https://formsubmit.co/)
+- Implementar el envío de formularios utilizando el servicio de [Formsubmit](https://formsubmit.co/)
+- Utilizar [Perplexity](https://www.perplexity.ai/) para corregir el código css
+- Instalar [Codeium](https://codeium.com/) en VSC y terminar / corregir la [Landing](#prueba-de-nivel) que pedí la clase pasada.
 
 ## [Clase 3 > Pendientes & Git:](https://dw3.netlify.app/#/3)
 
