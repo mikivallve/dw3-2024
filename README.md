@@ -9,7 +9,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Planificación del Semestre
 - Expectativas
 
-### Tarea
+### <span id="prueba-de-nivel">Tarea</span>
 
 - Crear una cuenta en Github.
 - Sincronizar VSC con dicha cuenta.
@@ -17,7 +17,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - ~~Crear una cuenta gratuita en Hostinger: https://www.hostinger.com/free-hosting~~.
 - Crear una cuenta gratuita en InfinityFree: https://infinityfree.com/.
 - Crear una cuenta gratuita en Netlify: https://www.netlify.com/pricing/.
-- <span id="prueba-de-nivel">Prueba de Nivel:</spam> El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
+- **Prueba de Nivel**: El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
 
 ## [Clase 2 > Pendientes Web 1 & Web 2: Hostings & Dominios](https://dw3.netlify.app/#/1)
 
