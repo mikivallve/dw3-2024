@@ -33,6 +33,8 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Utilizar [Perplexity](https://www.perplexity.ai/) para corregir el código css
 - Instalar [Codeium](https://codeium.com/) en VSC y terminar / corregir la [Landing](#prueba-de-nivel) que pedí la clase pasada.
 
+### Recomendado: [Certificarse en Desarrollo Web](https://www.sololearn.com/es/learn/courses/web-development)
+
 ## [Clase 3 > Pendientes & Git:](https://dw3.netlify.app/#/3)
 
 - Pendiente Clase 2: Subir la landing creada a _Netlify_. (drop)
@@ -43,17 +45,26 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 
 ### Tarea 1
 
-- Crear un repositorio **público** en Github siguiendo [éste video](https://www.youtube.com/watch?v=L_lWQZNhN7w)
-- Camiar la línea 8 de index.html por `<title>Primer Repo</title>`
-- Registrar este cambio como un **hito** (commit)
-- Sincronizar el repositorio remoto (en Github) utilizando `git push`
-- Compartir la ruta del repositorio por slack
+Hacer el curso de [Terminal+Git+Github](https://www.youtube.com/watch?v=PW_A-lOpVV0&t=1s). No se queden solo viendo, vayan probando y replicando todo lo que puedan del video.
+El material complementario del curso está dividido en 3 capítulos:
+
+- [Terminal](https://bluuweb.dev/03-git/) (los primeros 15 minutos del video)
+- [Fundamentos](https://bluuweb.dev/03-git/02-git.html) (la primer hora del video)
+- [Intermedio](https://bluuweb.dev/03-git/03-git-intermedio.html) (la segunda hora del video)
+
+Compartir su **Github Page** por _slack_
 
 ### Tarea 2
 
 Investigar una herramienta de inteligencia artificial para presentar en clase.
 
-### Recomendado [Certificarse en Desarrollo Web](https://www.sololearn.com/es/learn/courses/web-development)
+### Tarea 3
+
+- Crear un repositorio **público** en Github siguiendo [éste video](https://www.youtube.com/watch?v=L_lWQZNhN7w)
+- Camiar la línea 8 de index.html por `<title>Primer Repo</title>`
+- Registrar este cambio como un **hito** (commit)
+- Sincronizar el repositorio remoto (en Github) utilizando `git push`
+- Compartir la ruta del repositorio por _slack_
 
 ## [Clase 4: Github + IA](https://dw3.netlify.app/#/4/2)
 
