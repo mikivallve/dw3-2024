@@ -38,6 +38,26 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Pendiente Clase 2: Subir la landing creada a _Netlify_. (drop)
 - Pendiente Clase 1: Configuración de Extensiones de VSC
 - Pendientes Clase 2: Ver algunas herramientas de IA.
+- Git / ~~Gihub~~
+- ~~Subir la landing creada a _Netlify_ (git)~~
+
+### Tarea 1
+
+- Crear un repositorio **público** en Github siguiendo [éste video](https://www.youtube.com/watch?v=L_lWQZNhN7w)
+- Camiar la línea 8 de index.html por `<title>Primer Repo</title>`
+- Registrar este cambio como un **hito** (commit)
+- Sincronizar el repositorio remoto (en Github) utilizando `git push`
+- Compartir la ruta del repositorio por slack
+
+### Tarea 2
+
+Investigar una herramienta de inteligencia artificial para presentar en clase.
+
+### Recomendado [Certificarse en Desarrollo Web](https://www.sololearn.com/es/learn/courses/web-development)
+
+## [Clase 4: Github + IA](https://dw3.netlify.app/#/4/2)
+
+- Presentaciones de trabajos
 - Git / Gihub
 - Subir la landing creada a _Netlify_ (git)
 
@@ -57,11 +77,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Configurar los formularios para que se envíe una copia a miguel.vallve+1@gmail.com
 - Enviar link a repositorio y al nuevo sitio por **slack**.
 
-### Tarea 2
-
-- Investigar una herramienta de inteligencia artificial para presentar en clase.
-
-## [Clase 4: Pendientes Web 1 & Web 2: Formularios](https://dw3.netlify.app/#/5)
+## [Clase 5: Bajada a tierra + Formularios](https://dw3.netlify.app/#/5)
 
 - [Recapitular](https://internetingishard.netlify.app/html-and-css/forms/)
 - Netlify Forms
@@ -74,7 +90,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Subir la landing a Netlify utilizando Github
 - Configurar Netlify para que detecte el formulario y se encargue de los envíos.
 
-## Clase 5: Pendientes de Web 1 & Web 2: Responsive
+## Clase 6: Pendientes de Web 1 & Web 2: Responsive (?)
 
 - Recapitular
 - Mobile First y Breakpoints
