@@ -61,7 +61,7 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 ### Tarea 3
 
 - Crear un repositorio **público** en Github siguiendo [éste video](https://www.youtube.com/watch?v=L_lWQZNhN7w)
-- Camiar la línea 8 de index.html por `<title>Primer Repo</title>`
+- Cambiar la línea 8 de index.html por `<title>Primer Repo</title>`
 - Registrar este cambio como un **hito** (commit)
 - Sincronizar el repositorio remoto (en Github) utilizando `git push`
 - Compartir la ruta del repositorio por _slack_
