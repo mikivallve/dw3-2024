@@ -106,6 +106,11 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - Recapitular
 - Mobile First y Breakpoints
 - Flex vs Grid?
+- Intro a Bootstrap
+
+### Tareas
+
+-
 
 ---
 
