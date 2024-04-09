@@ -44,7 +44,7 @@
 				</section>
 				<section>
 					<!-- Teórico Hostings / Dominios -->
-					<div class="clase">clase<span>2</span></div>
+					<div class="clase">clase<span>2</span><small>TEMA 1</small></div>
 					<section data-slide="slide-2.1" data-auto-animate>Loading...</section>
 					<section data-slide="slide-2.2" data-auto-animate>Loading...</section>
 					<section data-slide="slide-2.3" data-auto-animate>Loading...</section>
@@ -57,39 +57,56 @@
 				</section>
 				<section>
 					<!-- Práctico Hostings Clásicos: InfinityFree -->
-					<div class="clase">clase<span>2</span></div>
+					<div class="clase">clase<span>2</span><small>TEMA 2</small></div>
 					<section data-slide="slide-3.1" data-auto-animate>Loading...</section>
 					<section data-slide="slide-3.2" data-auto-animate>Loading...</section>
 					<section data-slide="slide-3.3" data-auto-animate>Loading...</section>
 					<section data-slide="slide-3.4" data-auto-animate>Loading...</section>
+					<section data-slide="slide-4.1" data-tema="2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-4.2" data-tema="2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-4.3" data-tema="2" data-auto-animate>Loading...</section>
 				</section>
 				<section>
 					<!-- Práctico Hostings Modernos: Netlify-->
 					<div class="clase">clase<span>3</span><small>TEMA 1</small></div>
-					<section data-slide="slide-4.1" data-auto-animate>Loading...</section>
-					<section data-slide="slide-4.2" data-auto-animate>Loading...</section>
-					<section data-slide="slide-4.3" data-auto-animate>Loading...</section>
-				</section>
-				<section>
-					<!-- Git & GitHub-->
-					<div class="clase">clase<span>3</span><small>TEMA 2</small></div>
 					<section data-slide="slide-5.1" data-auto-animate>Loading...</section>
 					<section data-slide="slide-5.2" data-auto-animate>Loading...</section>
+					<section data-slide="npm-1.0" data-tema="2" data-auto-animate>Loading...</section>
+					<section data-slide="npm-1.1" data-tema="2" data-auto-animate>Loading...</section>
+				</section>
+				<section>
+					<!-- VSC, Git & Github-->
+					<div class="clase">clase<span>4</span><small>TEMA 1</small></div>
+					<section data-slide="slide-5.4" data-auto-animate>Loading...</section>
+					<section data-slide="slide-5.5" data-auto-animate>Loading...</section>
+					<section data-slide="slide-5.6" data-tema="2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-5.7" data-tema="2" data-auto-animate>Loading...</section>
+				</section>
+				<section>
+					<!-- AI -->
+					<div class="clase">clase<span>5</span><small>TEMA 1</small></div>
 					<section
 						data-slide="slide-5.3"
 						data-auto-animate
+						class="dark-slide"
 						style="background-image: url(/dist/assets/ai-bg.png); background-size: cover; background-position: center">
 						Loading...
 					</section>
-					<section data-slide="slide-5.4" data-auto-animate>Loading...</section>
-					<section data-slide="slide-5.5" data-auto-animate>Loading...</section>
-					<section data-slide="slide-5.6" data-auto-animate>Loading...</section>
-					<section data-slide="slide-5.7" data-auto-animate>Loading...</section>
 				</section>
 				<section>
 					<!-- Formularios: Repaso-->
-					<div class="clase">clase<span>4</span><small>TEMA 1</small></div>
+					<div class="clase">clase<span>6</span><small>TEMA 1</small></div>
 					<section data-slide="slide-6.1" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.2" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.3" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.4" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.5" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.6" data-auto-animate>Loading...</section>
+					<section data-slide="slide-6.7" data-auto-animate>Loading...</section>
+				</section>
+				<section>
+					<!-- Formularios: Bootstrap-->
+					<div class="clase">clase<span>7</span><small>TEMA 2</small></div>
 				</section>
 			</div>
 		</div>
@@ -107,9 +124,24 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+
+			Reveal.on("slidechanged", (event) => {
+				clase = document.querySelector(".present .clase small");
+				if (event.currentSlide.attributes["data-tema"]) {
+					tema = "TEMA " + event.currentSlide.attributes["data-tema"].value;
+				} else {
+					tema = "TEMA 1";
+				}
+				clase.innerHTML = tema;
+
+				if (event.currentSlide.classList.contains("dark-slide")) {
+					document.body.classList.add("dark");
+				} else {
+					document.body.classList.remove("dark");
+				}
 			});
 		</script>
 		<script></script>

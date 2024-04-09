@@ -1916,7 +1916,22 @@ header#mainHeader .hamburger-effect.active::before {
 .reveal section .icon-link::before {
   background-image: url("../assets/icons/link.svg");
 }
+.reveal section .icon-folder::before {
+  background-image: url("../assets/icons/folder.svg");
+  top: -0.1rem;
+}
 .reveal section .icon-uy::before {
   background-image: url("../assets/icons/uy.svg");
   background-size: 1.35rem 0.9rem;
+}
+
+body.dark section[data-slide] > header, body.dark .mini-menu {
+  filter: brightness(0) contrast(1) invert(1);
+}
+body.dark .clase {
+  color: white;
+}
+body.dark .clase span {
+  color: black;
+  background-color: white;
 }

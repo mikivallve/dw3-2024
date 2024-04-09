@@ -46,6 +46,11 @@
         background-image: url("../assets/icons/link.svg");
     }
 
+    .icon-folder::before {
+        background-image: url("../assets/icons/folder.svg");
+        top: -0.1rem;
+    }
+
     .icon-uy::before {
         background-image: url("../assets/icons/uy.svg");
         background-size: 1.35rem 0.9rem;

@@ -85,7 +85,7 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - Crear una rama nueva que se llame "vivo".
 - Vincular el repositorio local con el repositorio remoto en Github.
 - Utilizar **Netlify** para publicar la rama "vivo".
-- Configurar los formularios para que se envíe una copia a miguel.vallve+1@gmail.com
+- Configurar los formularios para que se envíe una copia a miguel.vallve+dw32024@gmail.com
 - Enviar link a repositorio y al nuevo sitio por **slack**.
 
 ## [Clase 5: Bajada a tierra + Formularios](https://dw3.netlify.app/#/5)
@@ -110,9 +110,7 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 
 ### Tareas
 
--
-
----
+- ***
 
 ### Para hacer tu propio slide: Getting started
 

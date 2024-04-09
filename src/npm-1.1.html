@@ -1,0 +1,53 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title" data-go-slide="4,0"><small>Entorno de Trabajo</small>Profesional</h1>
+		<div class="separator"></div>
+		<h2><small>Node Package</small>Manager</h2>
+		<div class="separator"></div>
+		<img src="/dist/assets/logo-npm.svg" alt="Visual Studio Code" width="100" class="m-0" />
+	</div>
+</header>
+<main>
+	<div class="cols">
+		<div class="col-60">
+			<h2>node_modules</h2>
+			<p>
+				Todos los paquetes que se instalan a través de npm ubican sus archivos dentro de node_modules. Esto permite ordenar y mantener el código de
+				terceros.
+			</p>
+			<p>Los desarrolladores incluyen estas dos carpetas como parte de un grupo de estándares que ayudan a entender y colaborar entre las partes.</p>
+
+			<code class="mt-2"><i class="icon-folder icon"></i>dist</code>
+			<p>Archivos combinados y minificados prontos para distribución / producción.</p>
+
+			<code class="mt-2"><i class="icon-folder icon"></i>src / source</code>
+			<p>Archivos fuente para edición, modularizados, sin complilar ni minificar</p>
+			<code class="mt-2"><i class="icon-folder icon"></i>lib</code>
+			<p>En esta carpeta se colocan las dependencias a otras bibliotecas (library).</p>
+		</div>
+		<div class="col-30">
+			<h3>Nomenclatura</h3>
+			<div class="">
+				<!-- prettier-ignore -->
+				<code class="bg-000">
+                    node_modules/ <br>
+                    &nbsp;&nbsp;│<br>
+                    &nbsp;&nbsp;└── modaal/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;└── demo/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── css/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── img/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── js/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.html<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;└── dist/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── css/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── js/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.html<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;└── source/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── css/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── js/<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.html<br>
+            </code>
+			</div>
+		</div>
+	</div>
+</main>
