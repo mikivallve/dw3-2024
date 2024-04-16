@@ -1,4 +1,4 @@
-.mini-menu{
+.mini-menu {
     @extend .pos-fixed;
     @extend .p-1;
     @extend .r-5;
@@ -9,7 +9,8 @@
     border: 2px solid transparent;
     border-right-width: 0;
     transition: all 0.5s ease;
-    &.active{
+
+    &.active {
         background-color: white;
         right: 0;
         padding: 2rem;
@@ -22,7 +23,8 @@ header#mainHeader {
     position: fixed;
     left: 2rem;
     z-index: 100;
-    display: none; /* TBD menu */
+    display: none;
+    /* TBD menu */
 
     .hamburger {
         position: relative;

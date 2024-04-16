@@ -1,11 +1,16 @@
-body.dark{
-    section[data-slide] > header, .mini-menu{
+body.dark {
+
+    section[data-slide]>header,
+    .mini-menu {
         filter: brightness(0) contrast(1) invert(1)
     }
+
     .clase {
         color: white;
-        span{
-        color: black;
-        background-color: white;
-    }}
+
+        span {
+            color: black;
+            background-color: white;
+        }
+    }
 }

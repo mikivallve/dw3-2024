@@ -59,8 +59,11 @@
     height: 90vh;
     max-height: unset !important;
 }
-.full-screen-content{
-   margin: 0;width: 100%; max-width: unset!important;
+
+.full-screen-content {
+    margin: 0;
+    width: 100%;
+    max-width: unset !important;
 }
 
 .flex-unset {
@@ -80,10 +83,11 @@
     flex-direction: column;
 }
 
-.shadow-light{
+.shadow-light {
     box-shadow: 0 0 10px 2px #f2f2f2;
 }
-.shadow-dark{
+
+.shadow-dark {
     box-shadow: 0 0 10px 2px #333;
 }
 

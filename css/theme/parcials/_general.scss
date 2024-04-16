@@ -32,7 +32,8 @@
         transition: opacity 0.5s;
     }
 
-    .vision-global, [data-go-slide]:not(a) {
+    .vision-global,
+    [data-go-slide]:not(a) {
         cursor: pointer;
         transition: filter 0.5s;
 

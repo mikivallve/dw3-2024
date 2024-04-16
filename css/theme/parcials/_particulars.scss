@@ -1,14 +1,16 @@
 .reveal section {
 
     // Titles
-    h1,h2 {
+    h1,
+    h2 {
         small {
             line-height: 80%;
             display: block;
             opacity: 0.6;
             margin: 0;
         }
-        &.lead-title{
+
+        &.lead-title {
             font-size: 1em;
             width: fit-content;
             margin: 0;
@@ -17,7 +19,7 @@
         }
     }
 
-    h3 small{
+    h3 small {
         line-height: 80%;
         display: block;
         opacity: 0.6;
@@ -31,6 +33,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
+
         img {
             width: calc(-1rem + 100% / 6);
             height: auto;
@@ -78,20 +81,25 @@
         border-radius: 0.5rem;
         font-size: 1.25rem;
     }
-    .clase{
+
+    .clase {
         position: fixed;
         z-index: 100;
         right: 1.25rem;
         top: 1.25rem;
-        span{background: #333;
+
+        span {
+            background: #333;
             color: white;
             display: flex;
-            justify-content: center;}
-            small{
-                text-align: center;
-                display: block;
-                font-weight: bold;
-                font-size: 0.85rem;
-            }
+            justify-content: center;
+        }
+
+        small {
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
     }
 }

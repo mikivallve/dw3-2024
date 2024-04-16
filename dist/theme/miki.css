@@ -6,7 +6,13 @@
 @import url(./fonts/roboto-slab/100.css);
 @import url(./fonts/roboto-slab/400.css);
 @import url(./fonts/roboto-slab/600.css);
-section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
   color: #222;
 }
 
@@ -375,7 +381,8 @@ header#mainHeader {
   position: fixed;
   left: 2rem;
   z-index: 100;
-  display: none; /* TBD menu */
+  display: none;
+  /* TBD menu */
 }
 header#mainHeader .hamburger {
   position: relative;
@@ -469,11 +476,13 @@ header#mainHeader .hamburger-effect.active::before {
   cursor: pointer;
   transition: opacity 0.5s;
 }
-.reveal .vision-global, .reveal [data-go-slide]:not(a) {
+.reveal .vision-global,
+.reveal [data-go-slide]:not(a) {
   cursor: pointer;
   transition: filter 0.5s;
 }
-.reveal .vision-global:hover, .reveal [data-go-slide]:not(a):hover {
+.reveal .vision-global:hover,
+.reveal [data-go-slide]:not(a):hover {
   filter: saturate(0);
 }
 .reveal h0 small {
@@ -666,7 +675,8 @@ header#mainHeader .hamburger-effect.active::before {
   max-width: calc(1440px - 4rem);
   margin: auto;
 }
-.reveal section header h1, .reveal section header h2 {
+.reveal section header h1,
+.reveal section header h2 {
   margin-bottom: 0;
 }
 .reveal section header .separator {
@@ -687,13 +697,15 @@ header#mainHeader .hamburger-effect.active::before {
   /* align-self: baseline;*/
 }
 
-.reveal section h1 small, .reveal section h2 small {
+.reveal section h1 small,
+.reveal section h2 small {
   line-height: 80%;
   display: block;
   opacity: 0.6;
   margin: 0;
 }
-.reveal section h1.lead-title, .reveal section h2.lead-title {
+.reveal section h1.lead-title,
+.reveal section h2.lead-title {
   font-size: 1em;
   width: fit-content;
   margin: 0;
@@ -1925,7 +1937,8 @@ header#mainHeader .hamburger-effect.active::before {
   background-size: 1.35rem 0.9rem;
 }
 
-body.dark section[data-slide] > header, body.dark .mini-menu {
+body.dark section[data-slide] > header,
+body.dark .mini-menu {
   filter: brightness(0) contrast(1) invert(1);
 }
 body.dark .clase {

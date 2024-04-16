@@ -16,21 +16,22 @@
                 width: calc(-4rem + 100% / #{$i});
                 overflow: hidden;
             }
+
             .col-#{$i}0 {
                 flex-shrink: 0;
-                width: calc( percentage(calc($i / 10)) - 1rem);
+                width: calc(percentage(calc($i / 10)) - 1rem);
             }
         }
     }
-    
+
     // Use the mixin to generate classes for numbers 1 to 12
     @include generate-cols(12);
-    
-    [class*="col-free"]{
+
+    [class*="col-free"] {
         width: unset;
     }
-    
-    
+
+
     [class*="col-"] {
         padding: 2rem;
         background-color: $backgroundColor;
