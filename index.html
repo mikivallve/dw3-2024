@@ -69,8 +69,7 @@
 				<section>
 					<!-- Práctico Hostings Modernos: Netlify-->
 					<div class="clase">clase<span>3</span><small>TEMA 1</small></div>
-					<section data-slide="slide-5.1" data-auto-animate>Loading...</section>
-					<section data-slide="slide-5.2" data-auto-animate>Loading...</section>
+					<section data-slide="vscode-1.0" data-auto-animate>Loading...</section>
 					<section data-slide="npm-1.0" data-tema="2" data-auto-animate>Loading...</section>
 					<section data-slide="npm-1.1" data-tema="2" data-auto-animate>Loading...</section>
 				</section>
@@ -86,7 +85,7 @@
 					<!-- AI -->
 					<div class="clase">clase<span>5</span><small>TEMA 1</small></div>
 					<section
-						data-slide="slide-5.3"
+						data-slide="ia-1.0"
 						data-auto-animate
 						class="dark-slide"
 						style="background-image: url(/dist/assets/ai-bg.png); background-size: cover; background-position: center">
@@ -135,6 +134,9 @@
 
 			Reveal.on("slidechanged", (event) => {
 				clase = document.querySelector(".present .clase small");
+				if (clase == null) {
+					return false;
+				}
 				if (event.currentSlide.attributes["data-tema"]) {
 					tema = "TEMA " + event.currentSlide.attributes["data-tema"].value;
 				} else {

@@ -19,12 +19,20 @@ slides.forEach((slide, index) => {
                 document.documentElement.style.opacity = 1; // Fade in the HTML content
             }
 
+            // lazy load images on the loaded slide
+            imgs = document.querySelectorAll("section.present img[data-src]");
+            imgs.forEach((img) => {
+                img.src = img.dataset.src;
+            });
+
             // Link elements to slides using data-go-slide attribute
             const linksASlides = document.querySelectorAll('[data-go-slide]');
             linksASlides.forEach(link => link.addEventListener('click', () => {
                 slideArguments = link.getAttribute('data-go-slide').split(',');
                 Reveal.slide(slideArguments[0], slideArguments[1]);
             }))
+
+
 
             // Send Email  
             if (document.getElementById('emailForm')) {
@@ -98,11 +106,11 @@ document.querySelector(".vision-global").addEventListener("click", (e) => {
     Reveal.toggleOverview();
 })
 
-Reveal.on( 'overviewhidden', event => {
+Reveal.on('overviewhidden', event => {
     document.querySelector(".vision-global").parentNode.classList.remove("active");
-} );
+});
 
-Reveal.on( 'overviewshown', event => {
+Reveal.on('overviewshown', event => {
     console.log("overview shown");
     document.querySelector(".vision-global").parentNode.classList.add("active");
-} );
+});
