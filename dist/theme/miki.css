@@ -857,11 +857,11 @@ header#mainHeader .hamburger-effect.active::before {
 }
 
 .flex-row {
-  flex-direction: row!important;
+  flex-direction: row;
 }
 
 .flex-column {
-  flex-direction: column!important;
+  flex-direction: column;
 }
 
 .shadow-light {
@@ -1395,11 +1395,6 @@ header#mainHeader .hamburger-effect.active::before {
 
 .p-1, .mini-menu {
   padding: 1rem !important;
-}
-
-.t-05 {
-  top: 0.5rem;
-  position: relative;
 }
 
 .t-1 {
