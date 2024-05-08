@@ -13,25 +13,12 @@ const sass = require('sass')
 
 const gulp = require('gulp')
 const tap = require('gulp-tap')
-
-//const zip = require('gulp-zip')
-import('gulp-zip').then((gulpZip) => {
-    // Your code using gulpZip goes here
-}).catch((error) => {
-    console.error('Error importing gulp-zip:', error);
-});
-
+const zip = require('gulp-zip')
 const header = require('gulp-header')
 const eslint = require('gulp-eslint')
 const minify = require('gulp-clean-css')
 const connect = require('gulp-connect')
-
-//const autoprefixer = require('gulp-autoprefixer')
-import('gulp-autoprefixer').then((gulpZip) => {
-    // Your code using gulp-autoprefixer goes here
-}).catch((error) => {
-    console.error('Error importing gulp-autoprefixer:', error);
-});
+const autoprefixer = require('gulp-autoprefixer')
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
@@ -191,12 +178,13 @@ function compileSass() {
     });
 }
 
-gulp.task('css-themes', () => gulp.src(['./css/theme/*.{sass,scss}'])
+gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
     .pipe(compileSass())
     .pipe(gulp.dest('./dist/theme')))
 
 gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(compileSass())
+    .pipe(autoprefixer())
     .pipe(minify({ compatibility: 'ie9' }))
     .pipe(header(banner))
     .pipe(gulp.dest('./dist')))
@@ -321,8 +309,7 @@ gulp.task('serve', () => {
     gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
 
     gulp.watch([
-        'css/theme/*.{sass,scss}',
-        'css/theme/parcials/*.{sass,scss}',
+        'css/theme/source/**/*.{sass,scss}',
         'css/theme/template/*.{sass,scss}',
     ], gulp.series('css-themes', 'reload'))
 
