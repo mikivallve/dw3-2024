@@ -10,7 +10,11 @@
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build & npm run copy & npm run remove",
+    "copy": "copyfiles index.html dist & copyfiles js/miki.js dist & copyfiles -V -u -f src/** dist/src",
+    "remove": "replace-in-file dist/index.html --configFile=search-replace.js",
+    "minifyhtml": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true dist/index.html -o dist/index.html",
+    "minih": "html-minifier --help"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -51,9 +55,11 @@
     "gulp-tap": "^2.0.0",
     "gulp-zip": "^5.1.0",
     "highlight.js": "^11.9.0",
+    "html-minifier": "^4.0.0",
     "marked": "^4.3.0",
     "node-qunit-puppeteer": "^2.1.2",
     "qunit": "^2.20.0",
+    "replace-in-file": "^7.1.0",
     "rollup": "^4.1.5",
     "sass": "^1.69.5",
     "yargs": "^17.7.2"
