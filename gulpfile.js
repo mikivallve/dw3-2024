@@ -86,7 +86,7 @@ gulp.task('js-es5', () => {
         cache.umd = bundle.cache;
         return bundle.write({
             name: 'Reveal',
-            file: './dist/reveal.js',
+            file: './dist/js/reveal.js',
             format: 'umd',
             banner: banner,
             sourcemap: true
@@ -108,7 +108,7 @@ gulp.task('js-es6', () => {
     }).then(bundle => {
         cache.esm = bundle.cache;
         return bundle.write({
-            file: './dist/reveal.esm.js',
+            file: './dist/js/reveal.esm.js',
             format: 'es',
             banner: banner,
             sourcemap: true
@@ -187,7 +187,7 @@ gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(autoprefixer())
     .pipe(minify({ compatibility: 'ie9' }))
     .pipe(header(banner))
-    .pipe(gulp.dest('./dist')))
+    .pipe(gulp.dest('./dist/css')))
 
 gulp.task('css', gulp.parallel('css-themes', 'css-core'))
 
