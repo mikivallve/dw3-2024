@@ -44,6 +44,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "babel-plugin-transform-html-import-to-string": "2.0.0",
     "colors": "^1.4.0",
+    "copyfiles": "^2.4.1",
     "core-js": "^3.33.1",
     "fitty": "^2.3.7",
     "glob": "^10.3.10",
