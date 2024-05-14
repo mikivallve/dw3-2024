@@ -145,6 +145,16 @@ $directions: "", "top", "bottom", "left", "right";
     }
 }
 
+.t--025 {
+    top: -0.25rem;
+    position: relative;
+}
+
+.t-05 {
+    top: 0.5rem;
+    position: relative;
+}
+
 // Text
 .text-center {
     text-align: center;
