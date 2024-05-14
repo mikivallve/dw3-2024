@@ -43,6 +43,7 @@ html.reveal-print {
 		height: auto !important;
 		overflow: hidden !important;
 	}
+
 	.reveal .slides {
 		position: static;
 		width: 100% !important;
@@ -107,6 +108,7 @@ html.reveal-print {
 	.reveal .backgrounds {
 		display: none;
 	}
+
 	.reveal .slide-background {
 		display: block !important;
 		position: absolute;
@@ -122,6 +124,7 @@ html.reveal-print {
 		max-width: none;
 		max-height: none;
 	}
+
 	.reveal .speaker-notes-pdf {
 		display: block;
 		width: 100%;

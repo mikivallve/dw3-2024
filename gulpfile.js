@@ -309,8 +309,8 @@ gulp.task('serve', () => {
     gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
 
     gulp.watch([
-        'css/theme/source/**/*.{sass,scss}',
-        'css/theme/template/*.{sass,scss}',
+        'css/**/*.{sass,scss}',
+        'css/*.{sass,scss}',
     ], gulp.series('css-themes', 'reload'))
 
     gulp.watch([

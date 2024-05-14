@@ -111,4 +111,44 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - [Ecommerce Wireframes](/dist/assets/bootstrap-ecommerce-wireframes.png)
 - [Lorem Ipsum](https://github.com/mikivallve/loremipsum)
 
-<!--  [PeachyPay](https://github.com/mikivallve/dw3-bootstrap-adjust-peachpay) -->
+## [Clase 8: Bootstrap](https://dw3.netlify.app/#/7)
+
+- Ejercitamos Bootstrap.
+
+### Tareas
+
+- [Ecommerce Wireframes](/dist/assets/bootstrap-ecommerce-wireframes.png)
+- [Lorem Ipsum](https://github.com/mikivallve/loremipsum)
+
+## [Clase 9: Sass ](https://dw3.netlify.app/#/8)
+
+- Intro a Sass.
+- Live Sass Compiler (VSC).
+- Bootstrap en Webpack
+
+## [Clase 10: Sass+Bootstrap](https://dw3.netlify.app/#/8/3)
+
+- Node-Sass.
+- Variables, Anidación
+- Bootstrap en Webpack
+
+### Tareas
+
+[PeachyPay](https://github.com/mikivallve/dw3-bootstrap-adjust-peachpay)
+
+## [Clase 11: Presentación Entrega](https://dw3.netlify.app/#/9)
+
+- Letra
+- Desafíos
+- Planificación
+
+## Clase 12: Correcciones Entrega
+
+- Dudas generales
+- Dudas particulares
+
+## [Clase 12: WordPress ](https://dw3.netlify.app/#/10)
+
+- Intro a WordPress.
+- Instalación
+- Recorrida
