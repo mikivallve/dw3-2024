@@ -12,9 +12,7 @@
 
 
 // Include theme-specific fonts
-@import url(./fonts/roboto-slab/100.css);
-@import url(./fonts/roboto-slab/400.css);
-@import url(./fonts/roboto-slab/600.css);
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap';
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #f2f2f2;

@@ -12,9 +12,9 @@
     "start": "npm run copyThings & gulp serve",
     "build": "gulp build && npm run copyThings && npm run removeTrash && npm run minifyhtml && npm run removeTemp",
     "built": "gulp build && npm run copyThings && npm run removeTrash",
-    "copyThings": "copyfiles index.html temp && copyfiles js/miki.js dist && copyfiles -V -u -f src/** dist/src && npm run copyFonts && npm run copyImgs",
+    "copyThings": "copyfiles index.html temp && copyfiles js/miki.js dist && copyfiles -V -u -f src/** dist/src && npm run copyImgs",
     "copyImgs": "copyfiles -V -a assets/** dist",
-    "copyFonts": "copyfiles -V -a css/fonts/** dist",
+    "copyFonts": "copyfiles -V -a assets/fonts/** dist",
     "removeTrash": "replace-in-file temp/index.html --configFile=search-replace.js",
     "minifyhtml": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true temp/index.html -o dist/index.html",  
     "removeTemp": "rm -rf temp"
