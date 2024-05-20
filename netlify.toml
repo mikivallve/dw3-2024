@@ -1,4 +1,0 @@
-[build]
-  base = "/"
-  publish = "dist"
-  command = "gulp build && npm run copyThings && npm run removeTrash && npm run minifyhtml && npm run removeTemp"
