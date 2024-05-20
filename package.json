@@ -16,8 +16,9 @@
     "copyImgs": "copyfiles -V -a assets/** dist",
     "copyFonts": "copyfiles -V -a assets/fonts/** dist",
     "removeTrash": "replace-in-file temp/index.html --configFile=search-replace.js",
-    "minifyhtml": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true temp/index.html -o dist/index.html",  
-    "removeTemp": "rm -rf temp"
+    "minifyhtml": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true temp/index.html -o dist/index.html",
+    "removeTemp": "rm -rf temp",
+    "convert-images": "node turn-into-webp.js && node replace-images.js"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -110,5 +111,9 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "sharp": "^0.33.4",
+    "webp-converter": "^2.3.3"
   }
 }
