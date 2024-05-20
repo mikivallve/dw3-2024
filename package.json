@@ -9,8 +9,8 @@
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
-    "start": "npm run copyThings & gulp serve",
-    "build": "gulp build && npm run copyThings && npm run removeTrash && npm run minifyhtml && npm run removeTemp && npm run convert-images",
+    "start": "npm run convert-images && npm run copyThings & gulp serve",
+    "build": "gulp build && npm run convert-images && npm run copyThings && npm run removeTrash && npm run minifyhtml && npm run removeTemp",
     "built": "gulp build && npm run copyThings && npm run removeTrash",
     "copyThings": "copyfiles index.html temp && copyfiles js/miki.js dist && copyfiles -V -u -f src/** dist/src && npm run copyImgs",
     "copyImgs": "copyfiles -V -a assets/** dist",
