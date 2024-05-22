@@ -133,8 +133,7 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - Bootstrap en Webpack
 
 ### Tareas
-
-[PeachyPay](https://github.com/mikivallve/dw3-bootstrap-adjust-peachpay)
+<!-- [PeachyPay](https://github.com/mikivallve/dw3-bootstrap-adjust-peachpay) -->
 
 ## [Clase 11: Presentación Entrega](https://dw3.netlify.app/#/9)
 
