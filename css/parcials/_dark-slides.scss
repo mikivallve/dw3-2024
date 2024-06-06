@@ -13,4 +13,25 @@ body.dark {
             background-color: white;
         }
     }
+
+    section.dark-slide .cols [class*=col-] {
+        background-color: transparent;
+
+        * {
+            color: white;
+        }
+
+        .icon-link::before {
+            filter: invert(1)
+        }
+
+        a:not(.imgLink) {
+            border-bottom-color: white;
+        }
+    }
+
+    .controls .controls-arrow {
+        filter: brightness(0) invert(1);
+    }
+
 }
