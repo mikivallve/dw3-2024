@@ -19,7 +19,7 @@ Este repo es un fork de [revealjs.com](https://revealjs.com/) que es la gente at
 - Crear una cuenta gratuita en Netlify: https://www.netlify.com/pricing/.
 - **Prueba de Nivel**: El objetivo es crear una landing page dado [este diseño](https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/pro-challenges/landing.fig). Una vez que lo tengan pronto, me lo mandan (zip) por slack como mensaje privado. Pueden apoyarse mirando [este video](https://www.youtube.com/watch?v=HXYZxVbWkjc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=65).
 
-## [Clase 2 > Pendientes Web 1 & Web 2: Hostings & Dominios](https://dw3.netlify.app/#/1)
+## [Clase 2 > Pendientes Web 1 & Web 2: Hosting & Dominios](https://dw3.netlify.app/#/1)
 
 - Cerrando Conceptos de Hosting & Dominios.
 - Quiz Interactivo del teórico.
@@ -133,6 +133,7 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - Bootstrap en Webpack
 
 ### Tareas
+
 <!-- [PeachyPay](https://github.com/mikivallve/dw3-bootstrap-adjust-peachpay) -->
 
 ## [Clase 11: Presentación Entrega](https://dw3.netlify.app/#/9)
